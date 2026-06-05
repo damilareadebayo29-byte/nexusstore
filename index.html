@@ -906,3 +906,58 @@ init();
 </script>
 </body>
 </html>
+<style>
+@media (max-width: 768px) {
+  .nav { padding: 14px 16px; }
+  .nav-links { display: none; }
+  .nav-right { gap: 8px; }
+  .user-tag { display: none !important; }
+  .cart-btn { padding: 8px 12px; font-size: 11px; }
+  .nav-auth-btn { padding: 8px 10px; font-size: 11px; }
+
+  .hero { grid-template-columns: 1fr; padding: 36px 16px 32px; gap: 28px; }
+  .hero h1 { font-size: 36px; letter-spacing: -1px; }
+  .hero-visual { height: 200px; }
+  .feat-icon { font-size: 52px; }
+  .hero-btns { flex-direction: column; }
+  .btn-primary, .btn-secondary { width: 100%; text-align: center; }
+
+  .stats-bar { grid-template-columns: 1fr; }
+  .stat { border-right: none; border-bottom: 0.5px solid var(--border); padding: 20px 16px; }
+  .stat:last-child { border-bottom: none; }
+
+  .section { padding: 32px 16px; }
+  .page-header { padding: 32px 16px 24px; }
+  .page-header h1 { font-size: 26px; }
+
+  .products-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  .product-img { height: 110px; font-size: 36px; }
+  .product-name { font-size: 12px; }
+  .product-price { font-size: 12px; }
+
+  .collections-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+  .collection-img { height: 120px; font-size: 44px; }
+  .collection-name { font-size: 14px; }
+
+  .about-grid { grid-template-columns: 1fr; gap: 12px; }
+  .team-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+
+  .support-grid { grid-template-columns: 1fr; gap: 28px; }
+
+  .drawer { width: 100%; right: -100%; }
+  .modal { width: 92%; padding: 24px 20px; }
+  .form-row { grid-template-columns: 1fr; gap: 0; }
+
+  footer { flex-direction: column; gap: 16px; text-align: center; padding: 24px 16px; }
+  .footer-links { justify-content: center; flex-wrap: wrap; }
+
+  .about-hero { padding: 40px 16px; }
+  .about-hero h1 { font-size: 32px; }
+}
+
+@media (max-width: 400px) {
+  .products-grid { grid-template-columns: 1fr; }
+  .collections-grid { grid-template-columns: 1fr; }
+  .hero h1 { font-size: 30px; }
+}
+</style>
